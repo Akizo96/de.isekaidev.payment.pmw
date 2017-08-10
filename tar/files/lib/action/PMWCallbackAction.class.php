@@ -45,10 +45,10 @@ class PMWCallbackAction extends AbstractAction {
                 }
                 $processor = $objectType->getProcessor();
 
-                $transactionDetails = array_merge(['productID' => $pingback->getProduct()->getId()], $_GET);
+                $transactionDetails = array_merge($_GET);
 
                 if ($status) {
-                    $processor->processTransaction(ObjectTypeCache::getInstance()->getObjectTypeIDByName('com.woltlab.wcf.payment.method', 'de.isekaidev.payment.method.pmw'), $token[1], $transactionDetails['wcfAmount'], $transactionDetails['wcfCurrency'], $transactionDetails['productID'], $status, $transactionDetails);
+                    $processor->processTransaction(ObjectTypeCache::getInstance()->getObjectTypeIDByName('com.woltlab.wcf.payment.method', 'de.isekaidev.payment.method.pmw'), $token[1], $transactionDetails['wcfAmount'], $transactionDetails['wcfCurrency'], $transactionDetails['ref'], $status, $transactionDetails);
                     echo 'OK';
                 }
             } else {
