@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package name="de.isekaidev.payment.pmw" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/package.xsd">
+    <packageinformation>
+        <packagename language="de"><![CDATA[Zahlungsanbieter: Paymentwall]]></packagename>
+        <packagename language="en"><![CDATA[Payment Provider: Paymentwall]]></packagename>
+        <packagedescription language="de"><![CDATA[Integriert den Zahlungsanbieter Paymentwall in das WSC]]></packagedescription>
+        <packagedescription language="en"><![CDATA[Integrates the Payment Provider Paymentwall into the WSC]]></packagedescription>
+        <version>1.0.0</version>
+        <date>2017-08-10</date>
+    </packageinformation>
+
+    <authorinformation>
+        <author>Tobias 'Mythen' Klein</author>
+        <authorurl>https://www.IsekaiDev.de/</authorurl>
+    </authorinformation>
+
+    <requiredpackages>
+        <requiredpackage minversion="3.0.0 RC 1">com.woltlab.wcf</requiredpackage>
+    </requiredpackages>
+
+    <excludedpackages>
+        <excludedpackage version="3.1.0 Beta 1">com.woltlab.wcf</excludedpackage>
+    </excludedpackages>
+
+    <instructions type="install">
+        <instruction type="language"/>
+        <instruction type="file">tar/files.tar</instruction>
+        <instruction type="template">tar/templates.tar</instruction>
+        <instruction type="option">xml/option.xml</instruction>
+        <instruction type="objectType">xml/objectType.xml</instruction>
+    </instructions>
+</package>

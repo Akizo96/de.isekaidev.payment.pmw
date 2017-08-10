@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/option.xsd">
+    <import>
+        <options>
+            <option name="paymentwall_project_key">
+                <categoryname>general.payment</categoryname>
+                <optiontype>text</optiontype>
+            </option>
+            <option name="paymentwall_project_secret">
+                <categoryname>general.payment</categoryname>
+                <optiontype>password</optiontype>
+            </option>
+        </options>
+    </import>
+</data>

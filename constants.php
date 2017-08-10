@@ -1,0 +1,4 @@
+<?php
+
+define('PAYMENTWALL_PROJECT_KEY', '');
+define('PAYMENTWALL_PROJECT_SECRET', '');
